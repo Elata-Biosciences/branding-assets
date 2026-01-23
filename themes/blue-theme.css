@@ -1,0 +1,72 @@
+:root[data-theme="blue"] {
+  /* Backgrounds */
+  --color-bg: #0B0D11;            /* Page background */
+  --color-surface: #0F1114;       /* Surface / panels */
+  --color-surface-translucent: rgba(255,255,255,0.02);
+  --color-border: rgba(255,255,255,0.06);
+
+  /* Text */
+  --color-text-primary: #E6E9EE;
+  --color-text-muted: #9DA4AB;
+
+  /* Accent */
+  --color-accent: #7C4DFF;        /* Primary accent (purple) */
+  --color-accent-foreground: #FFFFFF;
+
+  /* Neutrals (gray scale used for borders, text, non-interactive elements) */
+  --neutral-100: #0F1114;
+  --neutral-200: #1B1D20;
+  --neutral-300: #2A2D31;
+  --neutral-400: #4B4F54;
+  --neutral-500: #6E7379;
+  --neutral-600: #9AA0A6;
+
+  /* Semantic colors */
+  --semantic-danger: #FF6B5B;
+  --semantic-success: #3CD38D;
+  --semantic-warning: #FFCF58;
+  --semantic-info: #4FB5FF;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 9999px;
+
+  /* Scaling (uniform UI scale tokens) */
+  --scale-xxs: 0.8;
+  --scale-xs: 0.9;
+  --scale-sm: 0.95;
+  --scale-md: 1; /* default */
+  --scale-lg: 1.05;
+  --scale-xl: 1.1;
+}
+
+/* Small utilities to preview tokens */
+body[data-theme="blue"] {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-accent-foreground);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.badge-danger { background: var(--semantic-danger); color: white; padding: 4px 8px; border-radius: var(--radius-pill); }
+.badge-success { background: var(--semantic-success); color: white; padding: 4px 8px; border-radius: var(--radius-pill); }
+.badge-warning { background: var(--semantic-warning); color: rgba(0,0,0,0.85); padding: 4px 8px; border-radius: var(--radius-pill); }
+.badge-info { background: var(--semantic-info); color: rgba(0,0,0,0.85); padding: 4px 8px; border-radius: var(--radius-pill); }

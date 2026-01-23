@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Blue theme preview</title>
+    <link rel="stylesheet" href="./blue-theme.css" />
+    <style>
+      body { padding: 24px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto; }
+      .row { display:flex; gap:12px; align-items:center; margin:12px 0; }
+      .panel { width: 520px; }
+    </style>
+  </head>
+  <body data-theme="blue">
+    <h1>Blue theme preview</h1>
+    <div class="panel">
+      <h3>Controls</h3>
+      <div class="row">
+        <button class="btn-primary">Get started →</button>
+        <span class="badge-info">Info</span>
+        <span class="badge-success">Success</span>
+        <span class="badge-danger">Danger</span>
+        <span class="badge-warning">Warning</span>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top: 18px;">
+      <h3>Typography and scale</h3>
+      <p style="transform: scale(var(--scale-md));">This text uses the default scale (var(--scale-md)).</p>
+    </div>
+
+    <p style="margin-top:24px; color:var(--color-text-muted);">To view this preview locally open this file in a browser. The theme is applied using <code>data-theme="blue"</code> on the <code>&lt;body&gt;</code> element.</p>
+  </body>
+</html>

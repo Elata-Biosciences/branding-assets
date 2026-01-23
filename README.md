@@ -39,17 +39,21 @@ For its paragraphs, Elata uses solely **SF Pro Text** font kit. For weight on an
   - Size: 14px
 - **X-Small**
   - Size: 12px
-## Colors
-Colors are identified by their HEX Code and are comprised of the following:
-- Off-cream: #F8F5EE
-- Cream 1: #F3EEE2
-- Cream 2: #E5E0D3
-- Elata Green: #607274
-- White: #FDFDFD
-- Off-white: #F7F7F7
-- Gray 1: #DDDDDD
-- Gray 2: #CCCCCC
-- Gray 3: #6D6D6D
-- Off-black: #171717
-- Black: #0A0A0A
-- Red (commonly used as an accent color): #FF797B
+## Theme — Blue (dark)
+The repository now includes a dark "Blue" theme inspired by the provided Figma screenshot. The theme focuses on a deep background, translucent panels, a purple accent for primary actions, and a set of neutral and semantic colors.
+
+Colors included (hex):
+- Background: #0B0D11
+- Surface / Panel: #0F1114
+- Panel translucent: rgba(255,255,255,0.02)
+- Border (subtle): rgba(255,255,255,0.06)
+- Text primary: #E6E9EE
+- Text muted: #9DA4AB
+- Accent (primary / purple): #7C4DFF
+- Semantic — Danger (red): #FF6B5B
+- Semantic — Success (green): #3CD38D
+- Semantic — Warning (yellow): #FFCF58
+- Semantic — Info (blue): #4FB5FF
+
+See `themes/blue-theme.css` and `design-tokens/blue-theme.json` for token names, usage examples, and utility classes.
+
