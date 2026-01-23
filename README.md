@@ -86,6 +86,12 @@ Want to add or change a theme? Follow these steps:
 1. Add a theme CSS file under `themes/`, e.g. `themes/my-theme.css` and scope variables under `:root[data-theme="my-theme"]`.
 2. Add a JSON tokens file under `design-tokens/`, e.g. `design-tokens/my-theme.json`.
 3. Add an interactive demo in `themes/demo/` or add a `themes/my-theme-demo/` folder. Keep demos self-contained with a relative link to `../<theme>.css`.
-4. Update `themes/README.md` and `README.md` to mention the new theme and tokens.
+4. Add supporting screenshots to `images/themes/<theme-name>/` and reference them from documentation or the top-level `index.html`.
+5. Update `themes/README.md` and `README.md` to mention the new theme and tokens.
+
+### GitHub Pages
+A top-level `index.html` exists and is ready for GitHub Pages. To host the demo on GitHub Pages:
+- Go to the repository Settings → Pages and select the branch and root folder to serve.
+- The site will serve `index.html` from the repository root and show the interactive demo inline.
 
 Thanks for contributing — feel free to open a branch and a PR with the changes and I can help tidy up or add more demo content.

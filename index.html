@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Elata — Branding & theme demo</title>
+    <style>
+      :root{--accent:#7C4DFF;--muted:#6E7379}
+      body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0;color:#121212}
+      header{display:flex;align-items:center;gap:16px;padding:28px 36px;background:#fafafa;border-bottom:1px solid #eee}
+      .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,#6b5bff,#8f68ff);display:grid;place-items:center;color:white;font-weight:700}
+      h1{margin:0;font-size:20px}
+      p.lead{margin:6px 0 0;color:var(--muted)}
+      main{padding:28px 36px}
+      .hero{display:flex;gap:24px;align-items:center}
+      .screenshot{width:420px;border-radius:10px;overflow:hidden;border:1px solid #eee}
+      .meta{max-width:640px}
+      .links{margin-top:10px}
+      .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;color:white;background:var(--accent);margin-right:8px}
+      .btn-ghost{border:1px solid #ddd;padding:8px 12px;border-radius:8px;text-decoration:none;color:#333;background:white}
+      .frame-wrap{margin-top:28px;border:1px solid #e6e6e6;border-radius:8px;overflow:hidden}
+      iframe{width:100%;height:560px;border:0}
+      footer{padding:28px 36px;color:var(--muted);font-size:13px;border-top:1px solid #f0f0f0}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">E</div>
+      <div>
+        <h1>Elata — Branding & theme demo</h1>
+        <p class="lead">Interactive preview and tokens for the Blue (dark) theme. Open the demo below or open the preview pages directly.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="screenshot">
+          <img src="images/themes/blue/blue-demo.svg" alt="Blue theme demo screenshot" style="display:block;width:100%;height:auto;">
+        </div>
+        <div class="meta">
+          <h2 style="margin-top:0">Quick demo</h2>
+          <p>Use the interactive demo to test tokens, color variations and UI scale. The demo runs locally and is safe to use as a visual reference for components.</p>
+
+          <div class="links">
+            <a class="btn" href="themes/demo/index.html">Open interactive demo</a>
+            <a class="btn-ghost" href="themes/demo/preview.html">Open quick preview</a>
+            <a class="btn-ghost" href="themes/README.md">Theme docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame-wrap">
+        <iframe src="themes/demo/index.html" title="Interactive demo">
+          Your browser does not support iframes — <a href="themes/demo/index.html">open the demo</a>.
+        </iframe>
+      </div>
+
+    </main>
+
+    <footer>
+      To host on GitHub Pages: add this repo to a GitHub Pages site (Repository settings → Pages) and it will serve this `index.html` at the root. You can customize or add other theme pages to the site.
+    </footer>
+  </body>
+</html>
