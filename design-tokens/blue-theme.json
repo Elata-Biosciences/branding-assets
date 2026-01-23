@@ -1,0 +1,38 @@
+{
+  "name": "Elata Blue Dark",
+  "tokens": {
+    "background": "#0B0D11",
+    "surface": "#0F1114",
+    "surfaceTranslucent": "rgba(255,255,255,0.02)",
+    "border": "rgba(255,255,255,0.06)",
+
+    "textPrimary": "#E6E9EE",
+    "textMuted": "#9DA4AB",
+
+    "accent": "#7C4DFF",
+    "accentForeground": "#FFFFFF",
+
+    "neutral100": "#0F1114",
+    "neutral200": "#1B1D20",
+    "neutral300": "#2A2D31",
+    "neutral400": "#4B4F54",
+    "neutral500": "#6E7379",
+    "neutral600": "#9AA0A6",
+
+    "semanticDanger": "#FF6B5B",
+    "semanticSuccess": "#3CD38D",
+    "semanticWarning": "#FFCF58",
+    "semanticInfo": "#4FB5FF",
+
+    "radiusSm": "6px",
+    "radiusMd": "10px",
+    "radiusLg": "14px",
+
+    "scaleXxs": 0.8,
+    "scaleXs": 0.9,
+    "scaleSm": 0.95,
+    "scaleMd": 1,
+    "scaleLg": 1.05,
+    "scaleXl": 1.1
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html data-theme="blue">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blue theme — quick preview</title>
+    <link rel="stylesheet" href="../blue-theme.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      body { padding: 24px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto; }
+      .row { display:flex; gap:12px; align-items:center; margin:12px 0; }
+      .panel { width: 520px; }
+      footer { margin-top: 28px; color: var(--color-text-muted); }
+    </style>
+  </head>
+  <body>
+    <h1>Blue theme — quick preview</h1>
+    <div class="panel">
+      <h3>Controls</h3>
+      <div class="row">
+        <button class="btn-primary">Get started →</button>
+        <span class="badge-info">Info</span>
+        <span class="badge-success">Success</span>
+        <span class="badge-danger">Danger</span>
+        <span class="badge-warning">Warning</span>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top: 18px;">
+      <h3>Typography and scale</h3>
+      <p style="transform: scale(var(--scale-md));">This text uses the default scale (var(--scale-md)).</p>
+    </div>
+
+    <footer>Interactive demo: <a href="index.html">themes/demo/index.html</a>. Quick preview also available at <code>themes/preview.html</code>.</footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html data-theme="blue">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blue theme preview</title>
+    <link rel="stylesheet" href="./blue-theme.css" />
+    <style>
+      body { padding: 24px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto; }
+      .row { display:flex; gap:12px; align-items:center; margin:12px 0; }
+      .panel { width: 520px; }
+    </style>
+  </head>
+  <body>
+    <h1>Blue theme preview</h1>
+    <div class="panel">
+      <h3>Controls</h3>
+      <div class="row">
+        <button class="btn-primary">Get started →</button>
+        <span class="badge-info">Info</span>
+        <span class="badge-success">Success</span>
+        <span class="badge-danger">Danger</span>
+        <span class="badge-warning">Warning</span>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top: 18px;">
+      <h3>Typography and scale</h3>
+      <p style="transform: scale(var(--scale-md));">This text uses the default scale (var(--scale-md)).</p>
+    </div>
+
+    <p style="margin-top:24px; color:var(--color-text-muted);">This quick preview has moved to <code>themes/demo/preview.html</code>. For a richer interactive demo open <code>themes/demo/index.html</code>. If you want the very quick preview you previously used, open the demo preview link above.</p>
+  </body>
+</html>

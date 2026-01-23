@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6b5bff"/>
+      <stop offset="1" stop-color="#8f68ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="#0B0D11"/>
+  <g transform="translate(40,48)">
+    <rect x="0" y="0" width="240" height="56" rx="10" fill="url(#g)"/>
+    <text x="20" y="36" font-family="Montserrat, Arial" font-size="20" fill="#fff">Elata — Blue theme demo</text>
+
+    <g transform="translate(0,86)">
+      <rect x="0" y="0" width="540" height="220" rx="12" fill="#0F1114" stroke="rgba(255,255,255,0.06)"/>
+      <g transform="translate(18,18)">
+        <rect x="0" y="0" width="160" height="60" rx="8" fill="#7C4DFF"/>
+        <text x="18" y="38" font-family="Inter, Arial" font-size="16" fill="#fff">Primary action</text>
+
+        <rect x="190" y="0" width="120" height="44" rx="8" fill="#1B1D20" stroke="rgba(255,255,255,0.03)"/>
+        <text x="204" y="30" font-family="Inter, Arial" font-size="14" fill="#E6E9EE">Ghost</text>
+
+        <g transform="translate(0,90)">
+          <rect x="0" y="0" width="80" height="48" rx="8" fill="#4FB5FF"/>
+          <rect x="100" y="0" width="80" height="48" rx="8" fill="#3CD38D"/>
+          <rect x="200" y="0" width="80" height="48" rx="8" fill="#FF6B5B"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(580,86)">
+      <rect x="0" y="0" width="540" height="220" rx="12" fill="#0F1114" stroke="rgba(255,255,255,0.06)"/>
+      <g transform="translate(18,18)">
+        <text x="0" y="26" font-family="Inter, Arial" font-size="18" fill="#E6E9EE">Color tokens</text>
+        <rect x="0" y="40" width="96" height="64" rx="8" fill="#0B0D11" stroke="rgba(255,255,255,0.03)"/>
+        <rect x="116" y="40" width="96" height="64" rx="8" fill="#0F1114"/>
+        <rect x="232" y="40" width="96" height="64" rx="8" fill="#7C4DFF"/>
+        <rect x="348" y="40" width="96" height="64" rx="8" fill="#FF6B5B"/>
+      </g>
+    </g>
+
+    <g transform="translate(0,330)">
+      <rect x="0" y="0" width="1120" height="44" rx="8" fill="rgba(255,255,255,0.02)"/>
+      <text x="16" y="30" font-family="Inter, Arial" font-size="13" fill="#9DA4AB">Open the interactive demo for more examples — accent toggle, scale, and token usage.</text>
+    </g>
+  </g>
+</svg>
