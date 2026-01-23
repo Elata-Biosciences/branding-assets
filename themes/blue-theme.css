@@ -43,7 +43,7 @@
 }
 
 /* Small utilities to preview tokens */
-body[data-theme="blue"] {
+html[data-theme="blue"] {
   background: var(--color-bg);
   color: var(--color-text-primary);
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;

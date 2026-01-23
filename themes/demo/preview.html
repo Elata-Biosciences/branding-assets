@@ -2,16 +2,18 @@
 <html data-theme="blue">
   <head>
     <meta charset="utf-8" />
-    <title>Blue theme preview</title>
-    <link rel="stylesheet" href="./blue-theme.css" />
+    <title>Blue theme — quick preview</title>
+    <link rel="stylesheet" href="../blue-theme.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>
       body { padding: 24px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto; }
       .row { display:flex; gap:12px; align-items:center; margin:12px 0; }
       .panel { width: 520px; }
+      footer { margin-top: 28px; color: var(--color-text-muted); }
     </style>
   </head>
   <body>
-    <h1>Blue theme preview</h1>
+    <h1>Blue theme — quick preview</h1>
     <div class="panel">
       <h3>Controls</h3>
       <div class="row">
@@ -28,6 +30,6 @@
       <p style="transform: scale(var(--scale-md));">This text uses the default scale (var(--scale-md)).</p>
     </div>
 
-    <p style="margin-top:24px; color:var(--color-text-muted);">This quick preview has moved to <code>themes/demo/preview.html</code>. For a richer interactive demo open <code>themes/demo/index.html</code>. If you want the very quick preview you previously used, open the demo preview link above.</p>
+    <footer>Interactive demo: <a href="index.html">themes/demo/index.html</a>. Quick preview also available at <code>themes/preview.html</code>.</footer>
   </body>
 </html>

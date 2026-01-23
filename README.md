@@ -57,3 +57,35 @@ Colors included (hex):
 
 See `themes/blue-theme.css` and `design-tokens/blue-theme.json` for token names, usage examples, and utility classes.
 
+## Demo
+A small interactive demo has been added at `themes/demo/index.html`. Open that file in a browser locally to preview components, color tokens, and quick interactions (accent toggle & UI scale). The demo uses `data-theme="blue"` on the `<html>` element and references the theme CSS found in `themes/blue-theme.css`.
+
+## Usage
+Quick local preview (no tools required):
+- Open `themes/demo/preview.html` in a browser for a fast preview.
+- Open `themes/demo/index.html` for an interactive demo (JS toggles for accent and scale).
+
+Serve locally (recommended for consistent behavior):
+- Python (built-in):
+  - Run from the repo root: `python -m http.server 8000`
+  - Visit: `http://localhost:8000/themes/demo/index.html`
+- npm (no install required):
+  - Run from the repo root: `npm run demo` (uses `npx http-server` via the provided `package.json` script)
+
+Design tokens and assets:
+- Tokens: `design-tokens/blue-theme.json`
+- Theme CSS: `themes/blue-theme.css`
+- Demos and previews: `themes/demo/` and `themes/preview.html`
+
+If you want, I can remove `themes/preview.html` and keep only `themes/demo/preview.html` to avoid duplication.
+
+---
+
+## Contributing
+Want to add or change a theme? Follow these steps:
+1. Add a theme CSS file under `themes/`, e.g. `themes/my-theme.css` and scope variables under `:root[data-theme="my-theme"]`.
+2. Add a JSON tokens file under `design-tokens/`, e.g. `design-tokens/my-theme.json`.
+3. Add an interactive demo in `themes/demo/` or add a `themes/my-theme-demo/` folder. Keep demos self-contained with a relative link to `../<theme>.css`.
+4. Update `themes/README.md` and `README.md` to mention the new theme and tokens.
+
+Thanks for contributing — feel free to open a branch and a PR with the changes and I can help tidy up or add more demo content.

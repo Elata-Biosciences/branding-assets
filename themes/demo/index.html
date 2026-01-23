@@ -1,0 +1,84 @@
+<!doctype html>
+<html data-theme="blue">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elata — Blue theme demo</title>
+    <link rel="stylesheet" href="../blue-theme.css" />
+    <style>
+      :root { --demo-gap: 18px; }
+      body { padding: 36px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto; }
+      header { display:flex; align-items:center; gap:16px; margin-bottom:30px; }
+      .logo { width:48px; height:48px; border-radius:8px; background:linear-gradient(135deg,#6b5bff,#8f68ff); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; }
+      h1 { margin:0; font-size:28px; }
+      .controls { margin-left:auto; display:flex; gap:12px; }
+      .row { display:flex; gap:12px; align-items:center; margin-bottom:var(--demo-gap); }
+      .panel { background:var(--color-surface); border:1px solid var(--color-border); padding:18px; border-radius:12px; color:var(--color-text-primary); }
+      .card { padding: 12px; border-radius: var(--radius-sm); background: var(--color-surface-translucent); border:1px solid rgba(255,255,255,0.03);} 
+      .swatch { width:120px; height:72px; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.03); display:flex; align-items:flex-end; justify-content:flex-start; padding:10px; color:var(--color-text-primary); font-weight:600; }
+      .palette { display:flex; gap:12px; flex-wrap:wrap; }
+      .btn-primary { background: var(--color-accent); color: var(--color-accent-foreground); border-radius: var(--radius-sm); padding: 8px 12px; border:none; cursor:pointer; }
+      .btn-ghost { background: transparent; color: var(--color-text-primary); border:1px solid var(--color-border); padding:8px 12px; border-radius:8px; }
+      .variant { padding:8px 12px; border-radius: 8px; }
+      pre { background: rgba(0,0,0,0.12); padding: 12px; border-radius: 8px; overflow:auto; }
+      footer { margin-top: 40px; color: var(--color-text-muted); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">E</div>
+      <div>
+        <h1>Elata — Blue theme demo</h1>
+        <div style="color:var(--color-text-muted);font-size:13px;">A small interactive preview of the theme tokens and components</div>
+      </div>
+      <div class="controls">
+        <button id="accent-toggle" class="btn-ghost">Toggle accent</button>
+        <button id="scale-toggle" class="btn-ghost">Increase scale</button>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2 style="margin-top:0">Controls & components</h2>
+      <div class="row">
+        <button class="btn-primary">Primary action</button>
+        <button class="btn-ghost">Ghost action</button>
+        <div class="card variant">Variant • Rounded</div>
+      </div>
+
+      <div class="row">
+        <span class="badge-info">Info</span>
+        <span class="badge-success">Success</span>
+        <span class="badge-danger">Danger</span>
+        <span class="badge-warning">Warning</span>
+      </div>
+
+      <h3>Color tokens</h3>
+      <div class="palette">
+        <div class="swatch" style="background:var(--color-bg);">BG<br><small style="opacity:0.8">#0B0D11</small></div>
+        <div class="swatch" style="background:var(--color-surface);">Surface<br><small style="opacity:0.8">#0F1114</small></div>
+        <div class="swatch" style="background:var(--color-accent);">Accent<br><small style="opacity:0.8">#7C4DFF</small></div>
+        <div class="swatch" style="background:var(--semantic-danger);">Danger<br><small style="opacity:0.8">#FF6B5B</small></div>
+        <div class="swatch" style="background:var(--semantic-success);">Success<br><small style="opacity:0.8">#3CD38D</small></div>
+        <div class="swatch" style="background:var(--semantic-warning);">Warning<br><small style="opacity:0.8">#FFCF58</small></div>
+        <div class="swatch" style="background:var(--semantic-info);">Info<br><small style="opacity:0.8">#4FB5FF</small></div>
+      </div>
+
+      <h3 style="margin-top:16px">Typography</h3>
+      <p style="margin:6px 0">Headline example — <strong style="font-size:20px">Montserrat 600</strong></p>
+      <p style="margin:6px 0;color:var(--color-text-muted)">Body copy example — SF Pro Text, comfortable line-height and muted color</p>
+
+      <h3 style="margin-top:16px">Token snippet</h3>
+      <pre>--color-accent: var(--color-accent);
+--color-background: var(--color-bg);
+--radius-md: var(--radius-md);
+</pre>
+
+    </section>
+
+    <footer>
+      Open this file in a browser to view the demo. Use the <em>Toggle accent</em> button to switch accent color to a blue variant and <em>Increase scale</em> to test UI scaling.
+    </footer>
+
+    <script src="./demo.js"></script>
+  </body>
+</html>
