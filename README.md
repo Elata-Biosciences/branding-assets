@@ -1,11 +1,11 @@
 # Elata branding info
 This repo contains a reference to all of Elata's branding info.
 ## Typrography
-For the typography system, Elata uses **SF Pro Text** and **Montserrat**.
+For its typography system, Elata uses **Inter**.
 ### Headlines (Desktop/laptop)
-All headlines for desktop and mobile are written in **Montserrat**standardized at **140% line height** with a **weight of 600**
+All headlines for desktop and mobile are written in **Inter** standardized at **140% line height** with a **weight of 600**
 - **Headline 1:**
-  - Size: 60px
+  - Size: 56px
  - **Headline 2:**
    - Size: 34px
 - **Headline 3:**
